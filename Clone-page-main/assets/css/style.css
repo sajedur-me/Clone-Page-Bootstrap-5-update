@@ -1,0 +1,597 @@
+/**
+*
+* ----------------------------------------------------------
+*
+* Template : 
+* Author : 
+* Author URI : 
+*
+* ----------------------------------------------------------
+*
+**/
+
+/* Table Of Content
+---------------------------------------------------------
+01. General CSS
+02. Global Class
+03. Hero Banner CSS
+04. News Feeds CSS
+05. Authors CSS
+06. Related Posts CSS
+07. Call to action CSS
+--------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* -----------------------------------
+    01. General CSS
+-------------------------------------*/
+
+html,
+body {
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #514d4d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  margin: 0 0 16px;
+  line-height: 1.6em;
+  margin-bottom: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #001A38;
+  margin: 0 0 26px;
+}
+h1 {
+  font-size: 42px;
+  line-height: 1.45em;
+  letter-spacing: -2.5px;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 45px;
+  line-height: 1.27em;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+h4 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 18px;
+  line-height: 1em;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+h6 {
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #98afb6;
+  transition: all 0.3s ease 0s;
+  outline: none !important;
+  text-decoration: none !important;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  margin-bottom: 0px;
+}
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0 none;
+  color: #809aa3;
+}
+strong {
+    font-weight: 700;
+}
+
+/* -----------------------------------
+    02. Global Class
+-------------------------------------*/
+.global--flex {
+    display: flex;
+    align-items: center;
+}
+
+/* -----------------------------------
+    03. Hero Banner CSS
+-------------------------------------*/
+.hero--wrapp {
+    padding: 100px 0;
+}
+.top--desc.global--flex {
+    color: #98afb6;
+    margin-bottom: 15px;
+}
+.readingtimer {
+    height: 14px;
+    min-width: 70px;
+    margin-right: 16px;
+    color: #98afb6;
+}
+.watch {
+    height: 14px;
+    min-width: 70px;
+    margin-left: 16px;
+    color: #98afb6;
+}
+.watch img {
+    margin-right: 5px;
+}
+.breadcrumb {
+    background-color: transparent !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.breadcrumb a {
+    color: #98afb6;
+}
+.md--bread {
+    display: none;
+}
+.hero--inner {
+    margin-top: 50px;
+}
+.left--side--description h1.post--entry--title {
+    position: relative;
+    padding-bottom: 30px;
+}
+.left--side--description h1.post--entry--title::after {
+    position: absolute;
+    content: '';
+    width: 58px;
+    height: 2px;
+    background-color: #001a38;
+    left: 0;
+    bottom: 0;
+}
+.left--side--description .desc h5.author--name {
+    padding-bottom: 7px;
+}
+.left--side--description .desc p, .reviewed--wrap .desc p {
+    color: #809aa3;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1em;
+}
+.left--side--description .desc {
+    margin-right: 50px;
+    margin-left: 12px;
+    border-bottom: 2px dotted #d3dde3;
+}
+.left--side--description .desc h1.author--name, .reviewed--wrap span.watch--icon {
+    color: #001a38;
+    margin: 0;
+}
+.left--side--description .authors--wrapper .author--wrap img {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+}
+.left--side--description .authors--wrapper .author--wrap img, .reviewed--wrap .desc img {
+    margin-right: 6px;
+}
+
+/* -----------------------------------
+    04. News Feeds CSS
+-------------------------------------*/
+article.feed {
+    margin-bottom: 50px;
+}
+.sticky--sidebar--overview a, .sticky--sidebar--menu a {
+    text-decoration: none !important;
+    display: block;
+    margin: 12px 0px;
+}
+
+.sticky--sidebar--menu {
+    position: sticky;
+    top: 50px;
+    z-index: 9999;
+    border-left: 2px solid #F0F5F6;
+}
+
+.sticky--sidebar--menu a {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #98AFB6;
+    padding-left: 16px;
+    transition: 0s;
+    margin: 30px 0;
+}
+.sticky--sidebar--menu a:hover {
+    color: #1fb6ff;
+}
+.sticky--sidebar--menu a.current {
+    border-left: 2px solid #1fb6ff;
+    margin-left: -2px;
+    position: relative;
+    color: #1fb6ff;
+}
+.sticky--sidebar--menu a.current::before {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 2px;
+    background-color: #FFF;
+    left: -2px;
+    top: -10px;
+}
+.sticky--sidebar--menu a.current::after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 2px;
+    background-color: #FFF;
+    left: -2px;
+    bottom: -10px;
+}
+
+.sticky--sidebar--overview {
+    border: 1px solid #eaefef;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 28px 20px 16px;
+    position: sticky;
+    top: 50px;
+    z-index: 9999;
+}
+.blogpostsidebartitle {
+    color: #809aa3;
+    text-transform: uppercase;
+}
+.sticky--sidebar--overview a {
+    color: #1fb6ff;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.sticky--sidebar--overview a:hover {
+    color: #98AFB6;
+}
+
+/* -----------------------------------
+    05. Authors CSS
+-------------------------------------*/
+.author--wrapp.global--flex {
+    align-items: flex-start;
+    margin-top: 80px;
+    padding: 80px 0;
+    border-top: 1px solid #eaefef;
+    border-bottom: 1px solid #eaefef;
+}
+.author--wrapp img.author--profile {
+    width: 100px;
+    height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.written--by.global--flex {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.written--by.global--flex .writer--link a, .reviewed--wrapp .writer--link a {
+    color: #B5C7CB;
+    margin: 0 10px;
+}
+.written--by.global--flex .writer--link a:hover, .reviewed--wrapp .writer--link a:hover {
+    color: #1fb6ff;
+}
+
+.author--wrapp.global--flex .desc p.title {
+    padding-bottom: 2px;
+    color: #001a38;
+    margin-top: 10px;
+}
+
+.author--wrapp.global--flex .desc p.desc {
+    color: #203855;
+
+}
+.author--link {
+    margin-top: 40px;
+}
+.author--link a {
+    padding: 12px 22px;
+    border-radius: 4px;
+    color: #3e4854;
+    text-decoration: none !important;
+    border: 1px solid #eaefef;
+}
+.author--link a:hover {
+    border-color: #1fb6ff; 
+    color: #3e4854;
+}
+
+.reviewed--wrapp.global--flex {
+    align-items: flex-start;
+}
+.reviewed--wrapp {
+    padding: 80px 0 40px;
+}
+.reviewed--wrapp .desc p {
+    margin: 0 0 10px;
+}
+.reviewed--wrapp .border--btm {
+    position: relative;
+    padding-bottom: 7px;
+}
+.reviewed--wrapp .border--btm::after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px dotted #d3dde3;
+    height: 100%;
+    width: 116px;
+    left: 0;
+    bottom: 0;
+}
+.reviewed--wrapp img.reviewed--img {
+    margin-right: 20px;
+    width: 56px;
+    height: 56px;
+    min-height: 56px;
+    min-width: 56px;
+    border-radius: 50%;
+}
+.reviewed--wrapp p.reviewed--desc {
+    margin-top: 10px;
+}
+
+/* -----------------------------------
+    06. Related Posts CSS
+-------------------------------------*/
+.related--post--wrapp {
+    padding: 80px 0;
+}
+.heading p.knowlwdge--base {
+    color: #001a38;
+}
+.heading h2.related--title {
+    color: #001a38;
+    margin: 60px 0;
+}
+
+.single--related--post .related--desc h3 a {
+    color: #001a38;
+}
+.single--related--post .related--desc p.blog--excerpt {
+    color: #203855;
+    font-size: 16px;
+    line-height: 1.78em;
+    letter-spacing: 0.5px;
+}
+.single--related--post .related--desc a.related--more--link {
+    color: #00c2ff;
+    text-align: center;
+    text-decoration: none !important;
+}
+.single--related--post .related--desc a.related--more--link svg {
+    margin-left: 7px;
+}
+
+
+/* -----------------------------------
+    07. Call to action CSS
+-------------------------------------*/
+.coll--to--action--wrapp {
+    background-color: #f1faff;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.coll--to--action--wrapp::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/before-shape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.coll--to--action--wrapp::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/after-shape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.coll--to--action--wrapp .inner {
+    position: relative;
+    z-index: 1;  
+}
+.coll--to--action--wrapp .inner h2 {
+    color: #001a38;
+}
+
+.coll--to--action--wrapp .lists.global--flex {
+    justify-content: center;
+}
+.coll--to--action--wrapp .lists.global--flex p {
+    margin: 0 15px;
+    color: #203855;
+}
+.coll--to--action--wrapp .lists.global--flex p i {
+    color: #13CE66;
+    margin-right: 8px;
+}
+.coll--to--action--wrapp .action--btn {
+    margin-top: 80px;
+}
+.coll--to--action--wrapp .action--btn a {
+    background-color: #00C2FF;
+    padding: 16px 23px;
+    white-space: nowrap;
+    color: #FFF;
+    border-radius: 4px;
+}
+.coll--to--action--wrapp .action--btn a:hover {
+    background-color: #47d4ff;
+}
+
+
+@media screen and (max-width: 991px) {
+    .hero--wrapp {
+        padding: 50px 0;
+    }
+    .lg--bread {
+        display: none;
+    }
+    .md--bread {
+        display: block;
+    }
+
+    .md--bread .breadcrumb {
+        padding-left: 0 !important;
+    }
+    .column--5 {
+        order: 2;
+        margin-top: 30px;
+    }
+    .column--7 {
+        order: 1;
+    }
+    h1,h2,h3 {
+        font-size: 30px;
+    }
+    .coll--to--action--wrapp .inner h2 {
+        font-size: 30px;
+    }
+    /* Sidebar sticky menu Hodden */
+    .sticky--sidebar--menu, .sticky--sidebar--overview {
+        display: none;
+    }
+
+    /* Related section */
+    .related--post--wrapp .container {
+        max-width: 900px;
+    }
+    .heading p.knowlwdge--base, .heading h2.related--title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero--wrapp {
+        padding: 40px 0;
+    }
+    .related--post--wrapp {
+        padding: 0;
+    }
+    .related--post--wrapp .container {
+        max-width: 720px;
+    }
+    .heading h2.related--title {
+    }
+    .single--related--post {
+        margin-bottom: 60px;
+    }
+    .author--wrapp.global--flex {
+        margin-top: 0;
+        padding: 40px 0;
+    }
+    .reviewed--wrapp {
+        padding: 40px 0 60px;
+    }
+
+    .coll--to--action--wrapp::after {
+        display: none;
+     }
+    .coll--to--action--wrapp .lists.global--flex {
+        display: inherit;
+        margin-top: 30px;
+    }
+    .coll--to--action--wrapp .lists.global--flex p {
+        margin: 30px 0;
+    }
+
+}
+@media (max-width: 400px) {
+    .left--side--description h1.post--entry--title {
+        font-size: 22px;
+    }
+    p.readingtimer, .global--flex.watch {
+        font-size: 15px;
+    }
+    .watch {
+        margin-left: 10px;
+    }
+    p.readingtimer {
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+    p {
+        font-size: 14px;
+    }
+    h2, h3 {
+        font-size: 22px;
+    }
+    .author--wrapp.global--flex {
+        display: inherit;
+    }
+    .author--wrapp.global--flex .desc {
+        margin-top: 15px;
+    }
+    .author--wrapp img.author--profile {
+        display: flex;
+        margin: 0 auto;
+    }
+    .heading h2.related--title {
+        margin: 0 0 30px;
+    }
+    .coll--to--action--wrapp .lists.global--flex p {
+        margin: 15px 0;
+    }
+    .coll--to--action--wrapp .action--btn {
+        margin-top: 40px;
+    }
+    .coll--to--action--wrapp .action--btn a {
+        padding: 12px;
+    }
+    .author--link a {
+        padding: 12px;
+        font-size: 12px;
+    }
+}
